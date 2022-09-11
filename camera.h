@@ -70,7 +70,7 @@
  * 
  *  Query functions only return the correct value AFTER pending changes have been applied. (i.e. calling camera_view_matrix(..))
  *   Example:
- *   1. camera_move(..)	         // Changes NOT yet applied
+ *   1. camera_move(..)          // Changes NOT yet applied
  *   2. camera_eye_position(..)  // Returned state does NOT yet include previous move
  *   3. camera_view_matrix(..)   // Changes are now applied
  *   4. camera_eye_position(..)  // Returned state DOES now include previous move
