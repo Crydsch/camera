@@ -39,69 +39,69 @@
 #define CameraQuat bx::Quaternion
 
 static inline CameraVec3 cm_init_vec3(float _x, float _y, float _z) {
-	return bx::Vec3(_x, _y, _z);
+    return bx::Vec3(_x, _y, _z);
 }
 
 static inline CameraQuat cm_init_quat(float _x, float _y, float _z, float _w) {
-	return bx::Quaternion(_x, _y, _z, _w);
+    return bx::Quaternion(_x, _y, _z, _w);
 }
 
 static inline CameraVec3 cm_mul(CameraVec3 _a, CameraQuat _b) {
-	return bx::mul(_a, _b);
+    return bx::mul(_a, _b);
 }
 
 static inline CameraQuat cm_invert(CameraQuat _a) {
-	return bx::invert(_a);
+    return bx::invert(_a);
 }
 
 static inline CameraVec3 cm_add(CameraVec3 _a, CameraVec3 _b) {
-	return bx::add(_a, _b);
+    return bx::add(_a, _b);
 }
 
 static inline CameraVec3 cm_scale(CameraVec3 _a, float _b) {
-	return bx::mul(_a, _b);
+    return bx::mul(_a, _b);
 }
 
 static inline CameraVec3 cm_cross(CameraVec3 _a, CameraVec3 _b) {
-	return bx::cross(_a, _b);
+    return bx::cross(_a, _b);
 }
 
 static inline float cm_min(float _a, float _b) {
-	return bx::min(_a, _b);
+    return bx::min(_a, _b);
 }
 
 static inline float cm_max(float _a, float _b) {
-	return bx::max(_a, _b);
+    return bx::max(_a, _b);
 }
 
 static inline float cm_sqrt(float _a) {
-	return bx::sqrt(_a);
+    return bx::sqrt(_a);
 }
 
 static inline CameraVec3 cm_toEuler(CameraQuat _a) {
-	return bx::toEuler(_a);
+    return bx::toEuler(_a);
 }
 
 static inline CameraQuat cm_fromAxisAngle(CameraVec3 _a, float _b) {
-	return bx::fromAxisAngle(_a, _b);
+    return bx::fromAxisAngle(_a, _b);
 }
 
 static inline CameraQuat cm_mulQuat(CameraQuat _a, CameraQuat _b) {
-	return bx::mul(_a, _b);
+    return bx::mul(_a, _b);
 }
 
 static inline CameraQuat cm_normalizeQuat(CameraQuat _a) {
-	return bx::normalize(_a);
+    return bx::normalize(_a);
 }
 
 static inline CameraVec3 cm_normalizeVec3(CameraVec3 _a) {
-	return bx::normalize(_a);
+    return bx::normalize(_a);
 }
 
 static inline CameraVec3 cm_negate(CameraVec3 _a) {
-	return bx::neg(_a);
+    return bx::neg(_a);
 }
 
 static inline void cm_matrixFromQuat(float* _a, CameraQuat _b) {
-	return bx::mtxFromQuaternion(_a, _b);
+    return bx::mtxFromQuaternion(_a, _b);
 }
