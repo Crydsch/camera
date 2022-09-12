@@ -22,8 +22,8 @@ SOFTWARE.
 
 
 
-Parts of project use implementations from the project bx. (https://github.com/bkaradzic/bx)
-The relevant files mention this in their header.
+Parts of this project use implementations from the project bx. (https://github.com/bkaradzic/bx)
+The respective files mention this in their header.
 The copied and adapted code segments are marked as such.
 
 For these parts the following BSD 2-Clause "Simplified" License applies:
