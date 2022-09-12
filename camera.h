@@ -267,7 +267,7 @@ extern void camera_look_at(Camera* _cam, CameraVec3 _forward, CameraVec3 _up)
     // Based on typical vector to matrix to quaternion approach
 
     // Get orthogonal basis vectors
-    const CameraVec3 right = cm_cross(_up, _forward);
+    const CameraVec3 right = cm_normalizeVec3(cm_cross(_up, _forward));
     _up = cm_cross(_forward, right);
 
     // Convert to Quaternion
